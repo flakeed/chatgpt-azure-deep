@@ -1,0 +1,109 @@
+{
+  "package": {
+    "name": "@deep-foundation/chatgpt-azure-deep",
+    "version": "0.0.3"
+  },
+  "data": [
+    {
+      "package": {
+        "dependencyId": 0,
+        "containValue": "Model"
+      },
+      "id": 1
+    },
+    {
+      "package": {
+        "dependencyId": 1,
+        "containValue": "Endpoint"
+      },
+      "id": 2
+    },
+    {
+      "package": {
+        "dependencyId": 1,
+        "containValue": "ProvidedBy"
+      },
+      "id": 3
+    },
+    {
+      "package": {
+        "dependencyId": 2,
+        "containValue": "Tokens"
+      },
+      "id": 4
+    },
+    {
+      "id": "gpt-4",
+      "type": 1,
+      "value": {
+        "value": "gpt-4"
+      }
+    },
+    {
+      "id": "gpt-4-32k-endpoint",
+      "type": 2,
+      "value": {
+        "value": "https://deep-ai.openai.azure.com/openai/deployments/gpt-4-32k/chat/completions?api-version=2023-03-15-preview"
+      }
+    },
+    {
+      "id": "gpt-4-endpoint",
+      "type": 2,
+      "value": {
+        "value": "https://deep-ai.openai.azure.com/openai/deployments/gpt-4/chat/completions?api-version=2023-03-15-preview"
+      }
+    },
+    {
+      "id": "gpt-4-providedBy",
+      "type": 3,
+      "from": "gpt-4",
+      "to": "gpt-4-endpoint"
+    },
+    {
+      "id": "gpt-4-32k",
+      "type": 1,
+      "value": {
+        "value": "gpt-4-32k"
+      }
+    },
+    {
+      "id": "gpt-4-32k-providedBy",
+      "type": 3,
+      "from": "gpt-4-32k",
+      "to": "gpt-4-32k-endpoint"
+    },
+    {
+      "id": "gpt-4-32k-max-tokens",
+      "type": 4,
+      "from": "gpt-4-32k",
+      "to": "gpt-4-32k",
+      "value": {
+        "value": 32768
+      }
+    },
+    {
+      "id": "gpt-4-max-tokens",
+      "type": 4,
+      "from": "gpt-4",
+      "to": "gpt-4",
+      "value": {
+        "value": 8192
+      }
+    }
+  ],
+  "errors": [],
+  "dependencies": [
+    {
+      "name": "@deep-foundation/openai",
+      "version": "1.0.2"
+    },
+    {
+      "name": "@deep-foundation/chatgpt-azure",
+      "version": "0.0.5"
+    },
+    {
+      "name": "@deep-foundation/tokens",
+      "version": "0.0.11"
+    }
+  ]
+}
