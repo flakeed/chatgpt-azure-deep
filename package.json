@@ -1,10 +1,10 @@
 {
   "name": "@deep-foundation/chatgpt-azure-deep",
   "dependencies": {
-    "@deep-foundation/chatgpt-azure": "^1.0.0",
+    "@deep-foundation/chatgpt-azure": "^1.0.1",
     "@deep-foundation/core": "^0.0.2"
   },
-  "version": "0.0.5",
+  "version": "0.0.6",
   "keywords": [
     "deep-package"
   ]
